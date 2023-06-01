@@ -7,14 +7,20 @@ import { AboutPage } from "pages/AboutPage";
 import { MainPage } from "pages/MainPage";
 import { AppRouter } from "./providers/ThemeProvider/router";
 import { Navbar } from "widgets/Navbar";
+import Sidebar from "widgets/Sidebar/ui/Sidebar/Sidebar";
 
 const App = () => {
   const { theme } = useTheme();
   const bool = true;
   return (
     <div className={classNames("app", {}, [theme])}>
-      <Navbar />
-      <AppRouter />
+      <Suspense fallback="">
+        <Navbar />
+        <div className="content-page">
+          <Sidebar />
+          <AppRouter />
+        </div>
+      </Suspense>
     </div>
   );
 };
