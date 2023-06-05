@@ -1,4 +1,4 @@
-import React, { Suspense, useContext, useState } from "react";
+import React, { Suspense, useContext, useEffect, useState } from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import "./styles/index.scss";
 import { classNames } from "shared/lib/classNames/classNames";
@@ -9,6 +9,7 @@ import Sidebar from "widgets/Sidebar/ui/Sidebar/Sidebar";
 
 const App = () => {
   const { theme } = useTheme();
+
   return (
     <div className={classNames("app", {}, [theme])}>
       <Suspense fallback="">
