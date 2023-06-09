@@ -1,5 +1,5 @@
 import React, { ErrorInfo, ReactNode, Suspense } from "react";
-import Button from "shared/ui/Button/Button";
+import { Button } from "shared/ui/Button/Button";
 import ErrorPage from "widgets/ErrorPage/ui/ErrorPage";
 
 interface ErrorBoundaryProps {
