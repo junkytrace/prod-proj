@@ -23,5 +23,7 @@ jobs:
         run: npm run build:prod
       - name: unit testing
         run: npm run unit
-      - name: chromatic (screenshot) testing
+      - name: Publish to Chromatic
         run: npm run chromatic
+        uses: chromaui/action@v1
+        with: projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
