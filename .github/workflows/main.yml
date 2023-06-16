@@ -24,6 +24,5 @@ jobs:
       - name: unit testing
         run: npm run unit
       - name: Publish to Chromatic
-        run: npm run chromatic
         uses: chromaui/action@v1
         with: projectToken: chpt_c3fb1a9e45298ba
