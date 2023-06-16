@@ -24,4 +24,4 @@ jobs:
       - name: unit testing
         run: npm run unit
       - name: chromatic (screenshot) testing
-        run: npm run unit
+        run: npm run chromatic
