@@ -1,6 +1,6 @@
 name: linting, testing, building
 run-name: ${{ github.actor }} is learned
-  on: 
+on:
   push:
     branches: [master]
   pull_request:
