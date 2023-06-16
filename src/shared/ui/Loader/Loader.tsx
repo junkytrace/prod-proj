@@ -1,13 +1,13 @@
-import { classNames } from "shared/lib/classNames/classNames";
-import "./Loader.scss";
+import { classNames } from 'shared/lib/classNames/classNames';
+import './Loader.scss';
 
 interface LoaderProps {
   className?: string;
 }
 
-const Loader = ({ className }: LoaderProps) => {
+export const Loader = ({ className }: LoaderProps) => {
   return (
-    <div className={classNames("lds-roller", {}, [className])}>
+    <div className={classNames('lds-roller', {}, [className])}>
       <div></div>
       <div></div>
       <div></div>
@@ -19,4 +19,3 @@ const Loader = ({ className }: LoaderProps) => {
     </div>
   );
 };
-export default Loader;
