@@ -1,5 +1,5 @@
 name: linting, testing, building
-on: ${{ github.actor }} learned
+
   push:
     branches: [master]
   pull_request:
