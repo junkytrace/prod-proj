@@ -1,9 +1,10 @@
 name: linting, testing, building
-on:
+on: ${{ github.actor }} learned
   push:
     branches: [master]
   pull_request:
     branches: [master]
+  on: [push]
 jobs:
   pipeline:
     runs-on: ubuntu-latest
