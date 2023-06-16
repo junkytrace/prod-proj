@@ -39,5 +39,10 @@
       "target": "ES6"
     }
   },
-  "include": ["./config/jest/setupTests.ts", "./src/**/*.ts", "./src/**/*.tsx"]
+  "include": [
+    "./config/jest/setupTests.ts",
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "src/shared/ui/Button/storybook.test.ts"
+  ]
 }
