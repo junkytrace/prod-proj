@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import { classNames } from 'shared/lib/classNames/classNames';
-import cls from './Sidebar.module.scss';
-import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher';
-import LangSwitcher from 'shared/ui/LangSwitcher/LangSwitcher';
-import { Button, ButtonSize, ButtonTheme } from 'shared/ui/Button/Button';
-import { useTranslation } from 'react-i18next';
-import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
-import { RoutePath } from 'shared/config/routeConfig/routeConfig';
+import { useState } from "react";
+import { classNames } from "shared/lib/classNames/classNames";
+import cls from "./Sidebar.module.scss";
+import { ThemeSwitcher } from "shared/ui/ThemeSwitcher";
+import LangSwitcher from "shared/ui/LangSwitcher/LangSwitcher";
+import { Button, ButtonSize, ButtonTheme } from "shared/ui/Button/Button";
+import { useTranslation } from "react-i18next";
+import { AppLink, AppLinkTheme } from "shared/ui/AppLink/AppLink";
+import { RoutePath } from "shared/config/routeConfig/routeConfig";
 
 interface SidebarProps {
   className?: string;
@@ -35,7 +35,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
         size={ButtonSize.L}
         square
       >
-        {collapsed ? '>' : '<'}
+        {collapsed ? ">" : "<"}
       </Button>
       <div className={cls.items}>
         <AppLink
@@ -43,14 +43,14 @@ export const Sidebar = ({ className }: SidebarProps) => {
           to={RoutePath.main}
           className={cls.link}
         >
-          {t('Главная')}
+          {t("Главная")}
         </AppLink>
         <AppLink
           theme={AppLinkTheme.SECONDARY}
           to={RoutePath.about}
           className={cls.link}
         >
-          {t('О сайте')}
+          {t("О сайте")}
         </AppLink>
       </div>
       <div className={cls.switchers}>
